@@ -12,9 +12,9 @@ cd curl-function
 
 faas-cli deploy
 
-echo -n http://gateway.openfaas:8080/system/info | faas-cli invoke curl
+echo -n "-s http://gateway.openfaas:8080/system/info" | faas-cli invoke curl
 
-echo -n http://admin:password@gateway.openfaas:8080/system/info | faas-cli invoke curl
+echo -n "-s http://admin:password@gateway.openfaas:8080/system/info" | faas-cli invoke curl
 ```
 
 Requirements: OpenFaaS and faas-cli.

@@ -6,5 +6,5 @@ functions:
   curl:
     lang: dockerfile
     handler: ./curl
-    image: alexellis/curl:0.1.0
+    image: alexellis/curl:0.1.1
 

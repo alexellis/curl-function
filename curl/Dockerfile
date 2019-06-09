@@ -13,10 +13,14 @@ RUN chown app /home/app
 
 WORKDIR /home/app
 
+RUN apk add --no-cache bash curl ca-certificates
+
 USER app
 
+COPY entry.sh	entry.sh
+
 # Populate example here - i.e. "cat", "sha512sum" or "node index.js"
-ENV fprocess="xargs curl"
+ENV fprocess="./entry.sh"
 
 # Set to true to see request in function logs
 ENV write_debug="false"
