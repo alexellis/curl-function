@@ -19,4 +19,3 @@ echo -n "-s http://admin:password@gateway.openfaas:8080/system/info" | faas-cli 
 
 Requirements: OpenFaaS and faas-cli.
 
-
